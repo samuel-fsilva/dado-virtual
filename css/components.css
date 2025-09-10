@@ -1,0 +1,49 @@
+button {
+  border: 1px solid rgb(204, 0, 0);
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.25s;
+  background: transparent;
+  color: rgb(204, 0, 0);
+  filter: contrast(100%);
+}
+button:hover {
+  scale: 0.96;
+  filter: brightness(0.9);
+  background: rgb(204, 0, 0);
+  color: white;
+  
+}
+button:active {
+  scale: 0.93;
+  filter: brightness(0.85);
+  background: rgb(204, 0, 0);
+  color: white;
+}
+button:disabled{
+  filter: contrast(30%);
+
+}
+#dice {
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17vh;
+  border-radius: 22px;
+  background-color: rgb(204, 0, 0);
+  background-size: contain;
+  transition: 0.1s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.22) 0px -12px 30px, rgba(0, 0, 0, 0.22) 0px 4px 6px,
+    rgba(0, 0, 0, 0.22) 0px 12px 13px, rgba(0, 0, 0, 0.22) 0px -3px 5px;
+}
+.bgsquare {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  transition: 100ms;
+}

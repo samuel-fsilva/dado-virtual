@@ -1,0 +1,26 @@
+
+#content {
+  z-index: 10;
+  position: relative;
+
+  /*backdrop-filter: blur(18px);*/
+  height: 100vh;
+}
+.bg01 {
+  background: url(../images/dice-six-faces-one.svg);
+}
+.bg02 {
+  background: url(../images/dice-six-faces-two.svg);
+}
+.bg03 {
+  background: url(../images/dice-six-faces-three.svg);
+}
+.bg04 {
+  background: url(../images/dice-six-faces-four.svg);
+}
+.bg05 {
+  background: url(../images/dice-six-faces-five.svg);
+}
+.bg06 {
+  background: url(../images/dice-six-faces-six.svg);
+}
