@@ -1,10 +1,34 @@
-
+@import url(components.css);
+:root {
+  --test: 5px;
+}
 #content {
   z-index: 10;
   position: relative;
 
   /*backdrop-filter: blur(18px);*/
   height: 100vh;
+}
+
+#dice-box {
+  height: calc(var(--dice-size) * 1.5);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#config-box {
+  height: calc(var(--dice-size) * 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#config-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bg01 {
   background: url(../images/dice-six-faces-one.svg);

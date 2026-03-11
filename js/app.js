@@ -1,4 +1,16 @@
-window.addEventListener("load", () => {
+let diceBox = document.getElementById("dice-box");
+let quantDicesInput = document.getElementById("dice-quantity");
+let diceQuantity = 1;
+
+window.addEventListener("DOMContentLoaded", () => {
+  for (let i = diceQuantity; i > 0; i--) {
+    let dice = document.createElement("div");
+    dice.className = "dice"
+    diceBox.appendChild(dice);
+  }
+});
+
+/*window.addEventListener("load", () => {
   randomDiceFace();
 });
 
@@ -48,4 +60,4 @@ let diceAudio = new Audio("audio/dice-142528.mp3");
 function dicePlayAudio() {
   diceAudio.currentTime = 0;
   diceAudio.play();
-}
+}*/
