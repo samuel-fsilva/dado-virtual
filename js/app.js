@@ -1,15 +1,39 @@
-let diceBox = document.getElementById("dice-box");
-let quantDicesInput = document.getElementById("dice-quantity");
+const diceBox = document.getElementById("dice-box");
+const quantDicesInput = document.getElementById("dice-quantity");
 let diceQuantity = 1;
+const submitButton = document.getElementById("submit");
 
 window.addEventListener("DOMContentLoaded", () => {
   for (let i = diceQuantity; i > 0; i--) {
     let dice = document.createElement("div");
-    dice.className = "dice"
+    dice.className = "dice";
     diceBox.appendChild(dice);
   }
 });
 
+quantDicesInput.addEventListener("change", () => {
+  diceQuantity = quantDicesInput.value;
+  chageDiceQuant(diceQuantity);
+});
+
+function chageDiceQuant(dq) {
+  diceBox.innerHTML = "";
+  for (let i = dq; i > 0; i--) {
+    let dice = document.createElement("div");
+    dice.className = "dice";
+    diceBox.appendChild(dice);
+  }
+  if (dq > 1) {
+    submitButton.innerText = "Lançar os Dados!";
+    submitButton.disabled = false;
+    // diceBox.style.cssText = `${}`
+  } else if (dq == 1) {
+    submitButton.innerText = "Lançar o Dado!";
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
 /*window.addEventListener("load", () => {
   randomDiceFace();
 });
