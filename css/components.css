@@ -1,6 +1,7 @@
 :root {
   --dice-size: 250px;
 }
+
 button {
   border: 1px solid rgb(204, 0, 0);
   font-size: 20px;
@@ -32,7 +33,7 @@ button:disabled {
   margin-right: auto;
   border-radius: 22px;
   background-color: rgb(204, 0, 0);
-  background-size: contain;
+  background-size: cover !important;
   transition: 0.1s ease;
   box-shadow:
     rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -49,4 +50,9 @@ button:disabled {
   margin-right: auto;
   border-radius: 50px;
   transition: 100ms;
+}
+label {
+  height: 40%;
+  display: flex;
+  align-items: end;
 }

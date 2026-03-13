@@ -2,3 +2,21 @@
   border-radius: 25px;
   padding: 8px;
 }
+#dice-quantity {
+  display: flex;
+  width: 20%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  font-size: 20px;
+  transition: 0.2s;
+  border-radius: 2px;
+  height: 50%;
+  background: transparent;
+}
+#dice-quantity:focus{
+  outline: none;
+  background: rgba(0, 0, 0, 0.15);
+}

@@ -1,21 +1,23 @@
 @import url(components.css);
-:root {
-  --test: 5px;
-}
+
 #content {
   z-index: 10;
   position: relative;
-
-  /*backdrop-filter: blur(18px);*/
   height: 100vh;
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
 }
 
 #dice-box {
   height: calc(var(--dice-size) * 1.5);
+  max-height: calc(var(--dice-size) * 3);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: center;
+  gap: 10px;
+  width: 100vw;
 }
 
 #config-box {
@@ -23,12 +25,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 #config-box div {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  gap: 15px;
+  height: 100%;
 }
 .bg01 {
   background: url(../images/dice-six-faces-one.svg);

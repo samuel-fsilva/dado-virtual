@@ -1,0 +1,8 @@
+@media screen and (max-width:525px) {
+  :root {
+  --dice-size: 100px;
+}
+body{
+    max-width: 525px;
+}
+}
