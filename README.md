@@ -6,7 +6,7 @@
 
 ## 📸 Preview
 
-![Preview](<preview-link.png>)
+![Preview](./images/screenshot/image.png)
 Live Demo: https://samuel-fsilva.github.io/dado-virtual/
 
 ---
